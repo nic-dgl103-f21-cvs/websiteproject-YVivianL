@@ -14,9 +14,9 @@
   <meta property="og:description" content="A simple HTML5 Template for new projects.">
   <meta property="og:image" content="image.png">
 
-  <link rel="icon" href="/logo.png">
+  <link rel="icon" href="/images/newlogo.png">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!--Base Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
@@ -25,8 +25,8 @@
 <body>
   <header class="flexbox">
     <div>
-      <h1 class="title">Y.V.L ART</h1>
-      <img src="./images/logo.png" alt="logo" width="100" height="100">
+      <h1 class="title" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Y.V.L ART</h1>
+      <img src="./images/newlogo.png" alt="logo" width="100" height="100">
     </div>
 
     <img src="./images/BannerSmall" alt="banner" style="width: 100%; height: auto;">
@@ -50,29 +50,42 @@
       prefer to have some visual reference and/or written descriptions. If 
       you don’t get a reply from me within 3 business days, please contact 
       me again.</p>
-    <img src="./images/Baji.png" alt="Baji" style="width: 20%; height: auto;">
+    <img src="./images/HuTao.gif" alt="Hutao" style="width: 40%; height: auto;">
     </div>
-    <form style="border: 0.3em solid; padding:1em ;">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
-        <br>
-        <label>Order Information</label>
-        <br>
-        <textarea cols="40" rows="5" name="Order Info"></textarea>
+    <div class="wrapper-form">
+      <h2>Custom Order Form</h2>
+      <form method="post" action="https://learndigital.dev/programs/dgl103-form.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Ex: Sett">
+  
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Ex: Aphelios">
+  
+        <label for="email">Email <span class="label-required">* (required)</span></label>
+        <input type="email" id="email" name="email" placeholder="Ex: Cloud.Strife@gmail.com" required>
+  
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Please write about your custom order details here" style="height:200px"></textarea>
+  
+        <div class="wrapper-button">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </div>
       </form>
+    </div>
   </div>
-
 
   <footer>
     <h3>Contact Information</h3>
     <a href="https://www.instagram.com/yvivianl6/">
-      <img src="./images/instagram.png" alt="IG" width="50" height="50">
+      <img src="./images/instagram.png" alt="IG" width="100" height="50">
     </a>
     <a href="mailto:yuhsuanvl@gmail.com">
-        <img src="./images/email.png" alt="email" width="50" height="50">
+        <img src="./images/NewEmail.png" alt="email" width="50" height="50">
       </a>
+      <p>Disclaimer:This is a fictional website that was designed and coded as an educational exercise. 
+        It is not intended to be seen outside of the class environment. 
+        None of the content and images were approved by the business owner.</p>
   </footer>
 </body>
 </html>
